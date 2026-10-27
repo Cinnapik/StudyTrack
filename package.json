@@ -1,0 +1,26 @@
+{
+  "name": "studytrack",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/mobile",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace apps/mobile",
+    "typecheck": "npm run typecheck --workspace apps/mobile",
+    "lint": "npm run lint --workspace apps/mobile",
+    "test": "tsx --test tests/*.test.ts",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "format": "prettier --write .",
+    "contracts:generate": "tsx scripts/generate-contracts.ts",
+    "export:android": "npm run export:android --workspace apps/mobile"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "overrides": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  }
+}

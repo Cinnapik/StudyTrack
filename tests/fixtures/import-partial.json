@@ -1,0 +1,27 @@
+{
+  "documentType": "timetable",
+  "subjects": [
+    {
+      "name": "Тестовые алгоритмы",
+      "teacher": null,
+      "control": null,
+      "coursework": null,
+      "semester": null,
+      "totalHours": null,
+      "needsReview": true,
+      "raw": "Тестовые алгоритмы"
+    }
+  ],
+  "lessons": [
+    {
+      "subjectName": "Тестовые алгоритмы",
+      "weekday": 1,
+      "date": null,
+      "start": "09:00",
+      "end": "10:30",
+      "needsReview": true,
+      "raw": "Пн 09:00–10:30"
+    }
+  ],
+  "warnings": ["Синтетическая тестовая фикстура. Преподаватель и количество работ не указаны."]
+}
